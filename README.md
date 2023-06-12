@@ -43,10 +43,36 @@ Logic gates are the basic building blocks of any digital system. It is an electr
 ![image](https://user-images.githubusercontent.com/71547910/235332254-db13d222-1246-4b57-bbb2-3ab2287ccaa8.png)
 
 ## PROGRAM:
+int bs0 = 0;</br>
+int bs5 = 0;</br>
+void setup() {</br>
+  pinMode(13, OUTPUT);</br>
+  pinMode(0, INPUT);</br>
+  pinMode(5, INPUT);</br>
+}</br>
+void loop() {</br>
+
+  bs0 = digitalRead(0);</br>
+  bs5 = digitalRead(5);</br>
+
+  if (bs0&bs5) </br>
+  {</br>
+      digitalWrite(13, HIGH);</br>
+  } </br>
+  else </br>
+  {</br>
+    
+    digitalWrite(13, LOW);</br>
+  }</br>
+ }</br>
 
 ## CIRCUIT DIAGRAM:
+![po](https://github.com/Jeganvjk/Logical-operation1/assets/132189820/23e96cef-15e7-43a5-bf81-e51441bb3188)
+
+
 
 ## OUTPUT:
+![image](https://github.com/Jeganvjk/Logical-operation1/assets/132189820/31f6a94c-0a68-45c3-a33b-ea05dd383a1b)
 
 ## RESULT:
 
